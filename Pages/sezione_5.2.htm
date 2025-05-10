@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column min-vh-100" id="sezione">
+    <main>
+        <div class="theme">
+            <div class="dark-light-switch form-check form-switch pt-2">
+                <input type="checkbox" class="form-check-input p-2" role="switch" checked onclick="darklightclick()" id="darklight">
+                <label for="darklight"> Dark/Light</label>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-12 p-5">
+                <div class="cont container-fluid bg-black py-5 text-light rounded">
+                    <div class="container px-5 text-justify" style="text-align: justify; text-justify: auto">
+
+                        <div class="text-center py-2">
+                            <img src="../Assets/imgs/economia.png" style="width: 50px;" class="card-img-top light" alt="leader-icon">
+                            <h1>L'inflazione</h1>
+                            <p class="lead">Definizione e cause principali.</p>
+                        </div>
+                        
+                        <section class="mb-5">
+                            <h2 class="font-weight-bold">Cos'è l'inflazione?</h2>
+                            <p>L'inflazione è la crescita generale dei prezzi di beni e servizi, riducendo così il potere d'acquisto della moneta. Ciò significa che, nel tempo, le persone possono accedere a una quantità minore di beni e servizi con la stessa quantità di denaro.</p>
+                            <p>Per misurare l'inflazione (compito svolto dall'ISTAT in Italia), si calcola una media aggiornata annualmente dei prezzi dei beni e servizi più richiesti dai cittadini. Esistono inoltre indici specifici per gruppi di cittadini con abitudini simili.</p>
+                        </section>
+                        
+                        <section class="mb-5">
+                            <h2 class="font-weight-bold">Cause principali dell'inflazione</h2>
+                            <p><strong>1. Aumento della domanda:</strong> quando la richiesta di un bene o servizio aumenta, i cittadini sono disposti a pagare di più, portando a un incremento dei prezzi.</p>
+                            <p><strong>2. Aumento dei costi di produzione:</strong> se i costi di produzione di un bene o servizio aumentano, anche con una domanda stabile, i prezzi finali aumentano.</p>
+                            <p><strong>3. Combinazione delle due cause:</strong> un aumento sia dei costi di produzione che della domanda può portare a un'inflazione più significativa. Un esempio recente è la situazione post-pandemia da Covid-19, in cui le aziende hanno faticato a ripartire mentre la domanda di prodotti da parte dei cittadini cresceva.</p>
+                        
+                        </section>
+                        <img src="../Assets/imgs/inflazione.png" style="width: 100%" class="flright rounded img-fluid mb-5" alt="inflazione">
+
+                        <section class="mb-5">
+                            <h2 class="font-weight-bold">Cos'è la deflazione?</h2>
+                            <p>La deflazione è un fenomeno economico caratterizzato da una riduzione generale e prolungata del livello dei prezzi di beni e servizi in un'economia.</p>
+                            <p>A differenza dell'inflazione, che comporta un aumento dei prezzi, la deflazione si verifica quando l'offerta di beni e servizi supera la domanda, portando a un calo dei prezzi.</p>
+                        </section>
+                        <section class="mb-5">
+                            <h2 class="font-weight-bold">Cause principali della deflazione</h2>
+                            <p><strong>1. Calo della domanda:</strong> Se i consumatori riducono i consumi, le aziende possono essere costrette a diminuire i prezzi per stimolare le vendite.</p>
+                            <p><strong>2. Aumento dell'offerta:</strong> Un eccesso di produzione rispetto alla domanda può portare a un surplus di beni, spingendo i prezzi al ribasso.</p>
+                            <p><strong>3. Politiche monetarie restrittive:</strong> Una riduzione della quantità di moneta in circolazione può limitare la domanda e causare deflazione.</p>
+                            <p><strong>4. Tecnologia e produttività:</strong> Progressi tecnologici che riducono i costi di produzione possono portare a prezzi più bassi.</p>
+                        </section>
+                      </div>
+                </div>
+             </div>
+        </div>
+    </main>
+    <footer class="mt-auto p-4 bg-black text-white text-center">
+        <div class="container-fluid my-2">
+            <span class="border-top border-white">
+                Copyright &copy; Ferrari, Peverada, Mura
+            </span>
+        </div>
+
+    </footer>
+
+    <script src="../JS/theme.js"></script>
+</body>
+</html>

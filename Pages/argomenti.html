@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argomenti</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="h-100">
+    <header class="d-flex flex-column flex-lg-row h-100">
+        <button id="menu-toggle" class="btn btn-dark d-lg-none position-absolute m-2 border border-black">☰</button>
+        <div id="sidebar" class="col-2 h-100 p-0 position-fixed position-lg-static bg-black">
+            <div class="d-flex h-100 flex-column flex-shrink-0 p-3 text-white bg-black" style="border-right: 2px solid white;">
+                <a id="title" href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">IMPRESA E PROGETTO</a>
+                <hr>
+                <ul class="h-100 nav nav-pills flex-column mb-auto text-white">
+                    <li class="nav-item bg-dark my-2 argument-border iframe-selector" style="border-right: 10px solid">
+                        <a class="nav-link text-white" href="?sezione=1">
+                            <img src="../Assets/imgs/leader.png" style="width: 20px;" class="card-img-top light" alt="leader-icon">
+                            Leader
+                        </a>
+                    </li>
+                    <!--
+                    <li class="nav-item bg-dark my-2 border-success iframe-selector" style="border-right: 10px solid">
+                        <a class="nav-link text-white tendina-head" href="?sezione=2">
+                            <img src="../Assets/imgs/impresa.png" style="width: 20px;" class="card-img-top light" alt="impresa-icon">
+                            Impresa
+                        </a>
+                        <div>
+                            <ul>
+                                <li><a href="">La scuola e' un impresa?</a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    -->
+                    <li class="nav-item bg-dark my-2 argument-border iframe-selector dropdown" style="border-right: 10px solid">
+                        <a class="nav-link text-white dropdown-toggle" href="?sezione=2" role="button" data-bs-toggle="dropdown">
+                            <img src="../Assets/imgs/impresa.png" style="width: 20px;" class="card-img-top light" alt="impresa-icon">
+                            Impresa
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="?sezione=2">Cos'è un'impresa?</a></li>
+                          <li><a class="dropdown-item" href="?sezione=2.1">La scuola è un'impresa?</a></li>
+                        </ul>
+                    </li> 
+                    <li class="nav-item bg-dark my-2 argument-border iframe-selector" style="border-right: 10px solid">
+                        <a class="nav-link text-white" href="?sezione=3">
+                            <img src="../Assets/imgs/progetto.png" style="width: 20px;" class="card-img-top light" alt="progetto-icon">
+                            Progetto
+                        </a>
+                    </li>
+                    <li class="nav-item bg-dark my-2 argument-border iframe-selector" style="border-right: 10px solid">
+                        <a class="nav-link text-white" href="?sezione=4">
+                            <img src="../Assets/imgs/nostro-progetto.png" style="width: 20px;" class="card-img-top light" alt="stayfocusd-icon">
+                            Il nostro progetto
+                        </a>
+                    </li>
+                    <li class="nav-item bg-dark my-2 argument-border iframe-selector dropdown" style="border-right: 10px solid">
+                        <a class="nav-link text-white dropdown-toggle" href="?sezione=5" role="button" data-bs-toggle="dropdown">
+                            <img src="../Assets/imgs/economia.png" style="width: 20px;" class="card-img-top light" alt="impresa-icon">
+                            Economia
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="?sezione=5.1">Il PIL</a></li>
+                          <li><a class="dropdown-item" href="?sezione=5.2">L'inflazione</a></li>
+                          <li><a class="dropdown-item" href="?sezione=5.3">Domanda / offerta</a></li>
+                          <li><a class="dropdown-item" href="?sezione=5.4">Costi, ricavi e Break Even Point</a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <iframe id="content" src="" frameborder="0" class="col-10 offset-lg-0 p-0"></iframe>
+    </header>
+
+    <script src="../JS/iframe-sidebar.js"></script>
+    <script src="../JS/color-arguments.js"></script>
+    <script src="../JS/responsive-sidebar.js"></script>
+</body>
+</html>

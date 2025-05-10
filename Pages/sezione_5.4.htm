@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column min-vh-100" id="sezione">
+    <main>
+        <div class="theme">
+            <div class="dark-light-switch form-check form-switch pt-2">
+                <input type="checkbox" class="form-check-input p-2" role="switch" checked onclick="darklightclick()" id="darklight">
+                <label for="darklight"> Dark/Light</label>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-12 p-5">
+                <div class="cont container-fluid bg-black py-5 text-light rounded">
+                    <div class="container px-5 text-justify" style="text-align: justify; text-justify: auto">
+                  
+                      <div class="text-center py-2">
+                        <img src="../Assets/imgs/economia.png" style="width: 50px;" class="card-img-top light" alt="leader-icon">
+                        <h1>Break Even Point e Costi Aziendali</h1>
+                        <p class="lead">Il Break Even Point è il punto in cui i ricavi coprono esattamente i costi, senza generare profitto né perdita.</p>
+                      </div>
+                      
+                      <section class="mb-5">
+                        <h2 class="font-weight-bold">Cos'è il Break Even Point?</h2>
+                        <img src="../Assets/imgs/grafico_costiricavi.png" style="width: 500px;" class="flright rounded img-fluid" alt="bep-img">
+                        <p>Il Break Even Point (BEP) rappresenta il punto in cui i ricavi sono uguali ai costi. A questo punto non si ottiene né profitto né perdita, poiché i costi totali sono esattamente coperti dai ricavi. Superato il BEP, l'azienda inizia a generare profitto. È un indicatore fondamentale per le imprese, poiché consente di determinare il numero minimo di unità di prodotto da produrre per coprire i costi e arrivare al pareggio.</p>
+                        <p>Inoltre, il BEP aiuta nel calcolo del prezzo di vendita della singola unità di prodotto (PV) per garantire un margine di profitto adeguato in funzione della domanda del mercato. Inoltre, serve come strumento di previsione dei rischi aziendali, poiché indica il volume di vendite necessario per coprire i costi, evidenziando il rischio di fallimento se non viene raggiunto.</p>
+                      </section>
+                  
+                      <section class="mb-5">
+                        <h2 class="font-weight-bold">La Formula del Break Even Point</h2>
+                        <p>La formula per calcolare il BEP è la seguente:</p>
+                        <p><strong>BEP = CT / (P - CV)</strong></p>
+                        <p>dove:</p>
+                        <ul>
+                          <li><strong>CT</strong> è il costo totale;</li>
+                          <li><strong>P</strong> è il prezzo di vendita per unità;</li>
+                          <li><strong>CV</strong> è il costo variabile per unità.</li>
+                        </ul>
+                        <p>Per abbassare il BEP, l'azienda può ridurre i costi fissi (CF) e i costi variabili (CV), oppure aumentare il prezzo di vendita (PV). Questo aiuta a ridurre il numero di unità necessarie per coprire i costi e raggiungere il punto di pareggio.</p>
+                      </section>
+                  
+                      <section class="mb-5">
+                        <h2 class="font-weight-bold">Costi Fissi, Costi Variabili e Costo Totale</h2>
+                        <img src="../Assets/imgs/grafico_costi.png" style="width: 400px;" class="flright rounded img-fluid" alt="costi-img">
+                        <p><strong>Costo Fisso (CF):</strong> I costi fissi sono quei costi che non variano al variare della produzione o delle vendite. Esempi tipici sono l'affitto di locali, salari fissi, e altre spese che rimangono costanti anche se l'azienda non produce nulla.</p>
+                        <p><strong>Costo Variabile (CV):</strong> I costi variabili, al contrario, cambiano in base alla quantità di prodotto o servizio prodotto. Alcuni esempi sono i costi per materie prime, manodopera variabile, energia consumata durante la produzione, e altri costi che crescono o diminuiscono con il volume di produzione.</p>
+                        <p><strong>Costo Totale (CT):</strong> Il costo totale è la somma dei costi fissi e dei costi variabili. Viene calcolato come:</p>
+                        <p><strong>CT = CF + (CV * Q)</strong></p>
+                        <p>dove <strong>Q</strong> rappresenta la quantità di unità prodotte.</p>
+                      </section>
+                  
+                      <section class="mb-5">
+                        <h2 class="font-weight-bold">Ricavo</h2>
+                        <img src="../Assets/imgs/grafico_ricavi.png" style="width: 400px;" class="flright rounded img-fluid" alt="ricavi-img">
+                        <p><strong>Ricavo (R):</strong> Il ricavo si calcola moltiplicando il prezzo di vendita per il numero di unità vendute. La formula del ricavo è:</p>
+                        <p><strong>R = P * Q</strong></p>
+                        <p>Il ricavo indica la somma totale che un'azienda guadagna dalla vendita dei suoi prodotti o servizi. Se il ricavo supera il costo totale, l'azienda sta generando profitto; se il ricavo è inferiore al costo totale, l'azienda sta subendo una perdita.</p>
+                      </section>
+                  
+                      <section class="font-weight-bold">
+                        <h4>Limiti del Break Even Point</h4>
+                        <p>Il BEP presenta dei limiti, in quanto il calcolo viene effettuato in base a una fotografia statica in un determinato momento e non tiene conto delle variazioni nelle tempistiche e nei costi di produzione. Inoltre, non considera le rimanenze di magazzino, ipotizzando che tutti i prodotti vengano venduti, né la variabilità dei costi delle materie prime, che possono cambiare nel breve periodo. Infine, non prende in considerazione la concorrenza, la quale può influenzare la domanda di un prodotto, modificando così l'equilibrio del mercato.</p>
+                      </section>
+                  
+                    </div>
+                  </div>
+                  
+             </div>
+        </div>
+    </main>
+    <footer class="mt-auto p-4 bg-black text-white text-center">
+        <div class="container-fluid my-2">
+            <span class="border-top border-white">
+                Copyright &copy; Ferrari, Peverada, Mura
+            </span>
+        </div>
+
+    </footer>
+
+    <script src="../JS/theme.js"></script>
+</body>
+</html>
